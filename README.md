@@ -1,5 +1,7 @@
 # Sudoku-MATLAB
 
+![Alt Text](/ScreenCaps/sudoku animator.gif?raw=true "Optional Title")
+
 This Script is a Sudoku Solver that solves almost any Sudoku Puzzle by using the Recursive Backtracking Algorithm . Ever tried but stucked on Sudoku Puzzles given in newspapers, magazines and online. You can use this script to get its solution instantly and move further.
 
 * Every time "New Game" is executed, a Random Solvable board is created.
