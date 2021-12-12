@@ -1,12 +1,14 @@
-function matrix =recursionSolve(matrix)
+function matrix =recursionSolve(matrix,window)
 %This function receives 9x9 matrix and solves it recursively
-    for ii= 1:9
-        for jj= 1:9
+    for jj= 1:9
+        for ii= 1:9
             if isnan(matrix(ii,jj))
                 for n = 1:9
                     if(isValid(matrix,ii,jj,n))
                         matrix(ii,jj)=n;
-                        matrix=recursionSolve(matrix);
+                        refreshWindow(matrix,window);
+                        pause(0.01);
+                        matrix=recursionSolve(matrix,window);
                         if(isSolved(matrix))
                             return;
                         else

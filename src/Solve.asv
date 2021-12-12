@@ -16,9 +16,13 @@ function [matrix,bool] =Solve( ~, ~, window)
     end
 
 %calling the recursive function to solve
-     matrix = recursionSolve(matrix,window);
+     recursionSolve(matrix);
 
 %outputing the answer to the screen
-    refreshWindow(matrix,window);
+    for ii= 1:9
+        for jj= 1:9
+            set(window.cell(ii,jj) , 'string',matrix(ii,jj));
+        end
+    end
     bool=1;
 end
